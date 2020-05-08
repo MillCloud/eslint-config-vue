@@ -4,6 +4,9 @@ module.exports = {
     uni: 'readonly',
     plus: 'readonly'
   },
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   extends: [
     'eslint:recommended',
     'standard',
