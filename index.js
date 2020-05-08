@@ -2,15 +2,15 @@ module.exports = {
   root: true,
   globals: {
     uni: 'readonly',
-    plus: 'readonly'
+    plus: 'readonly',
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   extends: [
     'eslint:recommended',
     'standard',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
   ],
   rules: {
     'no-console':
@@ -30,18 +30,25 @@ module.exports = {
       process.env.NODE_ENV === 'pre-production' ||
       process.env.NODE_ENV === 'staging'
         ? 'warn'
-        : 'off'
+        : 'off',
+    'comma-dangle': ['error', 'always-multiline'],
+    semi: ['error', 'always'],
+    'space-before-function-paren': ['error', {
+      anonymous: 'always',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
   },
   overrides: [
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
       ],
       env: {
         jest: true,
-        mocha: true
-      }
-    }
-  ]
-}
+        mocha: true,
+      },
+    },
+  ],
+};
