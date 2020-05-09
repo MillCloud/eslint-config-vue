@@ -1,54 +1,54 @@
 module.exports = {
   root: true,
+  parser: "babel-eslint",
+  extends: ["eslint:recommended", "standard", "plugin:vue/recommended"],
+  env: {
+    browser: true,
+    es2020: true,
+    jest: true,
+    mocha: true,
+    node: true,
+  },
   globals: {
-    uni: 'readonly',
-    plus: 'readonly',
+    uni: "readonly",
+    plus: "readonly",
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-  extends: [
-    'eslint:recommended',
-    'standard',
-    'plugin:vue/recommended',
-  ],
   rules: {
-    'no-console':
-      process.env.NODE_ENV === 'production' ||
-      process.env.NODE_ENV === 'pre-production' ||
-      process.env.NODE_ENV === 'staging'
-        ? 'warn'
-        : 'off',
-    'no-debugger':
-      process.env.NODE_ENV === 'production' ||
-      process.env.NODE_ENV === 'pre-production' ||
-      process.env.NODE_ENV === 'staging'
-        ? 'warn'
-        : 'off',
-    'no-unused-vars':
-      process.env.NODE_ENV === 'production' ||
-      process.env.NODE_ENV === 'pre-production' ||
-      process.env.NODE_ENV === 'staging'
-        ? 'warn'
-        : 'off',
-    'comma-dangle': ['error', 'always-multiline'],
-    semi: ['error', 'always'],
-    'space-before-function-paren': ['error', {
-      anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always',
-    }],
-  },
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        jest: true,
-        mocha: true,
+    // override eslint-config-standard and follow prettier default options
+    "comma-dangle": ["error", "always-multiline"],
+    // for projects developing
+    "no-console":
+      process.env.NODE_ENV === "production" ||
+      process.env.NODE_ENV === "pre-production" ||
+      process.env.NODE_ENV === "staging"
+        ? "warn"
+        : "off",
+    // for projects developing
+    "no-debugger":
+      process.env.NODE_ENV === "production" ||
+      process.env.NODE_ENV === "pre-production" ||
+      process.env.NODE_ENV === "staging"
+        ? "warn"
+        : "off",
+    // for projects developing
+    "no-unused-vars":
+      process.env.NODE_ENV === "production" ||
+      process.env.NODE_ENV === "pre-production" ||
+      process.env.NODE_ENV === "staging"
+        ? "warn"
+        : "off",
+    // override eslint-config-standard and follow prettier default options
+    quotes: ["error", "double", { allowTemplateLiterals: false }],
+    // override eslint-config-standard and follow prettier default options
+    semi: ["error", "always"],
+    // override eslint-config-standard and follow prettier default options
+    "space-before-function-paren": [
+      "error",
+      {
+        anonymous: "always",
+        named: "never",
+        asyncArrow: "always",
       },
-    },
-  ],
+    ],
+  },
 };
