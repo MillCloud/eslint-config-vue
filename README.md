@@ -1,6 +1,6 @@
 # @modyqyw/eslint-config-vue
 
-An ESLint shareable config for vue. Also support uni-app.
+An ESLint shareable config for vue and javascript. Also support uni-app.
 
 ## Usage
 
