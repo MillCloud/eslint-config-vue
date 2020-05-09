@@ -23,9 +23,8 @@ yarn add eslint@~6.8.0 @modyqyw/eslint-config-vue@~1.2.0 -D
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: ['@modyqyw/vue']
-}
-
+  extends: ["@modyqyw/vue"],
+};
 ```
 
 - For VSCode
@@ -85,11 +84,9 @@ module.exports = {
 
 ## More Config
 
+- [@modyqyw/eslint-config](https://github.com/Millcloud/eslint-config)
 - [@modyqyw/eslint-config-vue-ts](https://github.com/Millcloud/eslint-config-vue-ts)
 - [@modyqyw/eslint-config-react](https://github.com/Millcloud/eslint-config-react)
-- [@modyqyw/eslint-config-react-ts](https://github.com/Millcloud/eslint-config-react-ts)
-- [@modyqyw/eslint-config](https://github.com/Millcloud/eslint-config)
-- [@modyqyw/eslint-config-ts](https://github.com/Millcloud/eslint-config-ts)
 
 ## License
 
