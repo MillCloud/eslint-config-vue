@@ -12,8 +12,9 @@ module.exports = {
     node: true,
   },
   globals: {
-    uni: "readonly",
     plus: "readonly",
+    uni: "readonly",
+    weex: "readonly",
   },
   rules: {
     // override eslint-config-standard and follow prettier default options
