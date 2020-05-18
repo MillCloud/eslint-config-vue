@@ -1,9 +1,10 @@
 module.exports = {
   root: true,
+  parser: "vue-eslint-parser",
   parserOptions: {
     parser: "babel-eslint",
   },
-  extends: ["eslint:recommended", "standard", "plugin:vue/recommended"],
+  extends: ["eslint:recommended", "airbnb-base", "plugin:vue/recommended"],
   env: {
     browser: true,
     es2020: true,
@@ -17,8 +18,6 @@ module.exports = {
     weex: "readonly",
   },
   rules: {
-    // override eslint-config-standard and follow prettier default options
-    "comma-dangle": ["error", "always-multiline"],
     // for projects developing
     "no-console":
       process.env.NODE_ENV === "production" ||
@@ -40,22 +39,5 @@ module.exports = {
       process.env.NODE_ENV === "staging"
         ? "warn"
         : "off",
-    // override eslint-config-standard and follow prettier default options
-    quotes: [
-      "error",
-      "double",
-      { avoidEscape: true, allowTemplateLiterals: false },
-    ],
-    // override eslint-config-standard and follow prettier default options
-    semi: ["error", "always"],
-    // override eslint-config-standard and follow prettier default options
-    "space-before-function-paren": [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always",
-      },
-    ],
   },
 };
