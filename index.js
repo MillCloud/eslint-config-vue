@@ -18,21 +18,40 @@ module.exports = {
     weex: "readonly",
   },
   rules: {
-    // for projects developing
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        js: "never",
+        mjs: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
+    ],
     "no-console":
       process.env.NODE_ENV === "production" ||
       process.env.NODE_ENV === "pre-production" ||
       process.env.NODE_ENV === "staging"
         ? "warn"
         : "off",
-    // for projects developing
     "no-debugger":
       process.env.NODE_ENV === "production" ||
       process.env.NODE_ENV === "pre-production" ||
       process.env.NODE_ENV === "staging"
         ? "warn"
         : "off",
-    // for projects developing
+    "no-param-reassign": [
+      "error",
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          "state", // for vuex state
+          "acc", // for reduce accumulators
+          "e", // for e.returnvalue
+        ],
+      },
+    ],
     "no-unused-vars":
       process.env.NODE_ENV === "production" ||
       process.env.NODE_ENV === "pre-production" ||
