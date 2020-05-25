@@ -7,9 +7,9 @@ module.exports = {
   plugins: ["prettier"],
   extends: [
     "eslint:recommended",
+    "plugin:vue/recommended",
     "prettier",
     "prettier/vue",
-    "plugin:vue/recommended",
   ],
   env: {
     browser: true,
