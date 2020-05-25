@@ -4,7 +4,13 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint",
   },
-  extends: ["eslint:recommended", "airbnb-base", "plugin:vue/recommended"],
+  plugins: ["prettier"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "prettier/vue",
+    "plugin:vue/recommended",
+  ],
   env: {
     browser: true,
     es2020: true,
@@ -18,17 +24,6 @@ module.exports = {
     weex: "readonly",
   },
   rules: {
-    "import/extensions": [
-      "error",
-      "always",
-      {
-        js: "never",
-        mjs: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-      },
-    ],
     "no-console":
       process.env.NODE_ENV === "production" ||
       process.env.NODE_ENV === "pre-production" ||
@@ -41,22 +36,12 @@ module.exports = {
       process.env.NODE_ENV === "staging"
         ? "warn"
         : "off",
-    "no-param-reassign": [
-      "error",
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          "state", // for vuex state
-          "acc", // for reduce accumulators
-          "e", // for e.returnvalue
-        ],
-      },
-    ],
     "no-unused-vars":
       process.env.NODE_ENV === "production" ||
       process.env.NODE_ENV === "pre-production" ||
       process.env.NODE_ENV === "staging"
         ? "warn"
         : "off",
+    "prettier/prettier": "warn",
   },
 };
