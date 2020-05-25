@@ -8,14 +8,14 @@ An ESLint shareable config for vue with javascript. Also support uni-app and wee
 
 ```sh
 npm i vue@~2.6.0
-npm i eslint@~6.8.0 @modyqyw/eslint-config-vue@~1.4.0 -D
+npm i eslint@~6.8.0 @modyqyw/eslint-config-vue@~1.5.0 -D
 ```
 
 For yarn, run scripts below.
 
 ```sh
 yarn add vue@~2.6.0
-yarn add eslint@~6.8.0 @modyqyw/eslint-config-vue@~1.4.0 -D
+yarn add eslint@~6.8.0 @modyqyw/eslint-config-vue@~1.5.0 -D
 ```
 
 - Set up.
@@ -68,11 +68,6 @@ module.exports = {
     "*.wpy": "html",
     "*.json": "jsonc",
     "*.nvue": "vue"
-  },
-  "vetur.format.defaultFormatterOptions": {
-    "prettyhtml": {
-      "wrapAttributes": true
-    }
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
