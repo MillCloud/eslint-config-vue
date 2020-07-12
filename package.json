@@ -1,6 +1,6 @@
 {
   "name": "@modyqyw/eslint-config-vue",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "An ESLint shareable config for vue with javascript. Also support uni-app and weex.",
   "keywords": [
     "eslint",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@modyqyw/prettier-config": "~1.0.0",
-    "eslint": "~7.3.0",
+    "eslint": "~7.4.0",
     "prettier": "~2.0.0"
   },
   "peerDependencies": {
