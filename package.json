@@ -1,6 +1,6 @@
 {
   "name": "@modyqyw/eslint-config-vue",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "An ESLint shareable config for vue with javascript. Also support uni-app and weex.",
   "keywords": [
     "eslint",
@@ -26,6 +26,8 @@
   "dependencies": {
     "babel-eslint": "~10.1.0",
     "eslint-config-airbnb-base": "~14.2.0",
+    "eslint-import-resolver-node": "~0.3.0",
+    "eslint-import-resolver-webpack": "~0.12.0",
     "eslint-plugin-import": "~2.22.0",
     "eslint-plugin-vue": "~6.2.0",
     "vue-eslint-parser": "~7.1.0"
