@@ -44,7 +44,8 @@ module.exports = {
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
-    "json": "jsonc"
+    "json": "jsonc",
+    "vue-html": "html"
   },
   "eslint.validate": [
     "javascript",
@@ -65,7 +66,12 @@ module.exports = {
     "*.axml": "html",
     "*.sjs": "javascriptreact",
     "*.acss": "css",
-    "*.wpy": "html",
+    "*.swan": "html",
+    "*.ttml": "html",
+    "*.ttss": "css",
+    "*.jxml": "html",
+    "*.jxss": "css",
+    "*.wpy": "vue",
     "*.json": "jsonc",
     "*.nvue": "vue",
     "*.ux": "vue"
