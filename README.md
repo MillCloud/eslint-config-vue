@@ -8,14 +8,14 @@ An ESLint shareable config for vue with javascript. Also support uni-app and wee
 
 ```sh
 npm i vue@~2.6.0
-npm i -D eslint@~7.10.0 @modyqyw/eslint-config-vue@~1.7.0
+npm i -D eslint@~7.10.0 @modyqyw/eslint-config-vue@~1.8.0
 ```
 
 For yarn, run scripts below.
 
 ```sh
 yarn add vue@~2.6.0
-yarn add -D eslint@~7.10.0 @modyqyw/eslint-config-vue@~1.7.0
+yarn add -D eslint@~7.10.0 @modyqyw/eslint-config-vue@~1.8.0
 ```
 
 - Set up.
