@@ -1,10 +1,10 @@
 # @modyqyw/eslint-config-vue
 
-An ESLint shareable config for vue with javascript. Also support uni-app and weex.
+An ESLint shareable config for vue. Also support uni-app and weex.
 
 ## Usage
 
-- Install the config.
+- If you use JavaScript, install the config for JavaScript.
 
 ```sh
 npm i vue@~2.6.0
@@ -18,12 +18,27 @@ yarn add vue@~2.6.0
 yarn add -D eslint@~7.10.0 @modyqyw/eslint-config-vue@~1.8.0
 ```
 
+- If you use TypeScript, install the config for TypeScript.
+
+```sh
+npm i vue@~2.6.0 vue-property-decorator@~9.0.0
+npm i -D eslint@~7.10.0 typescript@~4.0.0 @modyqyw/eslint-config-vue@~1.8.0
+```
+
+For yarn, run scripts below.
+
+```sh
+yarn add vue@~2.6.0 vue-property-decorator@~9.0.0
+yarn add -D eslint@~7.10.0 typescript@~4.0.0 @modyqyw/eslint-config-vue@~1.8.0
+```
+
 - Set up.
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: ["@modyqyw/vue"],
+  extends: ["@modyqyw/vue"], // for js
+  // extends: ["@modyqyw/vue/typescript], // for ts
 };
 ```
 
@@ -85,7 +100,6 @@ module.exports = {
 ## More Config
 
 - [@modyqyw/eslint-config](https://github.com/MillCloud/eslint-config)
-- [@modyqyw/eslint-config-vue-ts](https://github.com/MillCloud/eslint-config-vue-ts)
 - [@modyqyw/eslint-config-react](https://github.com/MillCloud/eslint-config-react)
 
 ## License
