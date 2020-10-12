@@ -1,6 +1,6 @@
 {
   "name": "@modyqyw/eslint-config-vue",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "An ESLint shareable config for vue with javascript. Also support uni-app and weex.",
   "keywords": [
     "eslint",
