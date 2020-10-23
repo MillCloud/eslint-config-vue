@@ -1,3 +1,5 @@
+**DEPRECATED! Check [@modyqyw/eslint-config](https://github.com/MillCloud/eslint-config).**
+
 # @modyqyw/eslint-config-vue
 
 An ESLint shareable config for vue. Also support uni-app and weex.
